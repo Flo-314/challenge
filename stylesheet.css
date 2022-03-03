@@ -1,33 +1,172 @@
-*{
-    box-sizing: border-box;
-    padding: 0px;
-    margin: 0px;
+@font-face {
+    font-family: "DIN Pro";
+    src: url("/fonts/din/DINPro-Bold.woff")
+    format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+ @font-face {
+    font-family: "Open Sans";
+    src: url(fonts/open_sans/);
+ }
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
 }
+
+
 
 /* general styling  */
-.logo{
-    margin-left: 6em;
+.logo {
 }
-.model{
-    width: 90%;
-    max-width: 1150px;
+.flex {
+  display: flex;
 }
-
-/* elements styling*/
-header{
-    background: white;
-    
+.flexColumn{
+    display: flex;
+    flex-direction: column;
 }
 
-main{
-   
-}
-
-footer{
-    background-color: #000000;
- 
+.model {
+  width: 80%;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 
+/* text stuff*/
+.secondaryColor{
+    color: #00A0DF
+}
+.T1{
+    font-size: 45px;
+}
+.T2{
+    font-size: 22px;
+}
+.T3{
+    font-size: 16px;
+}
+.T4{
+    font-size: 14px;
+}
+.T5{
+    font-size: 12px;
+}
+.bolder{
+    font-weight: 700;
+}
+.lighter{
+    font-weight: 400;
+}
+.primaryFont{
+    font-family: "DIN Pro";
+}
+.secondaryFont{
+    font-family: "Open Sans";
+}
 
+
+
+header {
+  padding: 0.8em 0;
+  background: white;
+}
+
+/* landing styling*/
+#landingSection {
+  background-color: #00044c;
+  color: #ffffff;
+  padding: 5em 0;
+  background-image: url("./images/image_header_brand_pattern.svg");
+  background-repeat: no-repeat;
+  background-position-x: 130%;
+  background-size: contain;
+  background-position-y: 85%;
+}
+
+#landingSection div{
+    align-items: center;
+    justify-content: space-between;
+}
+#landingSection article{
+    max-width: 500px;
+    justify-content: center;    
+}
+
+#landingSection img{
+    margin-right: 3.5em;
+}
+#landingSection h3,#landingSection h1, #landingSection p{padding: 0.3em 0;}
+#landingSection h1 p{padding: 0;}
+
+#landingSection button{
+    background-color: #00A0DF;
+    padding: 1.2em 3.5em;
+    border: none;
+    color: white;
+    max-width: 190px;
+    margin-top: 2em;
+    justify-self: flex-end;
+}
+footer {
+  background-color: #000000;
+  padding: 0.8em 0;
+}
+
+@media (max-width: 769px) { 
+    /* general styling*/
+
+    .model {
+        width: 95%;
+        max-width: 1600px;
+        margin: 0 auto;
+      }
+
+
+      /* landing styling*/
+      #landingSection {
+        padding: 5em 0;
+        background-repeat: no-repeat;
+        background-position-x: 300%;
+        background-size:auto;
+        background-position-y: 94%;
+      }
+      #landingSection div{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #landingSection article {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    #landingSection button{
+        margin-bottom: 2em;
+    }
+    #landingSection img{
+        margin: 0 6em;
+    }
+    #landingSection h3,#landingSection h1, #landingSection p{padding: 0.15em 0;}
+
+      
+}
+
+@media (max-width: 425px) {
+
+    #landingSection {
+        background-image: url("./images/image_header_brand_pattern.svg");
+        background-repeat: no-repeat;
+        background-size: 130%;
+        background-position: -80% 90%;
+    }
+    #landingSection img{
+        max-width: 317px;
+        margin: 0 auto;
+        margin-left: 4em;
+    }
+}
 
