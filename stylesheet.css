@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* general styling  */
+.logo{
+    margin-left: 6em;
+}
+.model{
+    width: 90%;
+    max-width: 1150px;
+}
+
+/* elements styling*/
+header{
+    background: white;
+    
+}
+
+main{
+   
+}
+
+footer{
+    background-color: #000000;
+ 
+}
+
+
+
+
