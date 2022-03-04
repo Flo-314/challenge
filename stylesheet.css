@@ -1,22 +1,21 @@
 @font-face {
-    font-family: "DIN Pro";
-    src: url("/fonts/din/DINPro-Bold.woff")
-    format("woff");
+  font-family: "DIN Pro";
+  src: url("/fonts/din/DINPro-Bold.woff") format("woff");
   font-weight: bold;
-  font-style: normal; }
+  font-style: normal;
+}
 
- @font-face {
-    font-family: "Open Sans";
-    src: url(fonts/open_sans/);
- }
+@font-face {
+  font-family: "Open Sans";
+  src: url(/fonts/open_sans/OpenSans-Regular-webfont.woff);
+}
 
 * {
   box-sizing: border-box;
   padding: 0px;
   margin: 0px;
+  font-family: "DIN Pro";
 }
-
-
 
 /* general styling  */
 .logo {
@@ -24,9 +23,9 @@
 .flex {
   display: flex;
 }
-.flexColumn{
-    display: flex;
-    flex-direction: column;
+.flexColumn {
+  display: flex;
+  flex-direction: column;
 }
 
 .model {
@@ -34,41 +33,69 @@
   max-width: 1600px;
   margin: 0 auto;
 }
-
-
-/* text stuff*/
-.secondaryColor{
-    color: #00A0DF
+.magnetaBG {
+  background: #e50097;
 }
-.T1{
-    font-size: 45px;
-}
-.T2{
-    font-size: 22px;
-}
-.T3{
-    font-size: 16px;
-}
-.T4{
-    font-size: 14px;
-}
-.T5{
-    font-size: 12px;
-}
-.bolder{
-    font-weight: 700;
-}
-.lighter{
-    font-weight: 400;
-}
-.primaryFont{
-    font-family: "DIN Pro";
-}
-.secondaryFont{
-    font-family: "Open Sans";
+.secondaryBG {
+  background-color: #00a0df;
 }
 
+/* Common Components*/
+#arrowLink {
+  margin-top: 5em;
+  align-items: center;
+  justify-items: center;
+  gap: 1em;
+}
+#arrowLink a {
+  align-self: center;
+  text-decoration: none;
+}
+#arrowLink button {
+  height: 28px;
+  width: 28px;
+  border-radius: 4em;
+  border: none;
+}
 
+/* text classes*/
+.secondaryColor {
+  color: #00a0df;
+}
+.T1 {
+  font-size: 45px;
+  line-height: 55px;
+}
+.T2 {
+  font-size: 22px;
+  line-height: 32px;
+}
+.T3 {
+  font-size: 16px;
+  line-height: 30px;
+}
+.T4 {
+  font-size: 14px;
+}
+.T5 {
+  font-size: 12px;
+  line-height: 25px;
+}
+.bolder {
+  font-weight: 700;
+}
+.lighter {
+  font-weight: 400;
+}
+.primaryFont {
+  font-family: "DIN Pro";
+}
+.secondaryFont {
+  font-family: "Open Sans";
+}
+.white {
+  color: white;
+}
 
 header {
   padding: 0.8em 0;
@@ -87,86 +114,191 @@ header {
   background-position-y: 85%;
 }
 
-#landingSection div{
-    align-items: center;
-    justify-content: space-between;
+#landingSection div {
+  align-items: center;
+  justify-content: space-between;
 }
-#landingSection article{
-    max-width: 500px;
-    justify-content: center;    
+#landingSection article {
+  max-width: 500px;
+  justify-content: center;
 }
 
-#landingSection img{
-    margin-right: 3.5em;
+#landingSection img {
+  margin-right: 3.5em;
 }
-#landingSection h3,#landingSection h1, #landingSection p{padding: 0.3em 0;}
-#landingSection h1 p{padding: 0;}
+#landingSection h3,
+#landingSection h1,
+#landingSection p {
+  padding: 0.3em 0;
+}
+#landingSection h1 p {
+  padding: 0;
+}
 
-#landingSection button{
-    background-color: #00A0DF;
-    padding: 1.2em 3.5em;
-    border: none;
-    color: white;
-    max-width: 190px;
-    margin-top: 2em;
-    justify-self: flex-end;
+#landingSection button {
+  background-color: #00a0df;
+  padding: 1.2em 3.5em;
+  border: none;
+  color: white;
+  max-width: 190px;
+  margin-top: 2em;
+  justify-self: flex-end;
 }
+
+/* MAIN CARD*/
+#mainArticleSection {
+  background-color: red;
+  background: linear-gradient(180deg, white 73%, #e8f8ff 27%);
+}
+#mainCard {
+  margin: 5em 0;
+  display: grid;
+  grid-template-columns: 4fr 5fr;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  max-width: 1150px;
+  width: 100%;
+  max-height: 401px;
+  height: 100%;
+}
+#mainCardContent {
+  padding: 2em;
+}
+#mainCard img {
+  max-width: 686px;
+  max-height: 400px;
+}
+#toolButton {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  padding: 0.05em 0;
+  max-width: 160px;
+  max-height: 30px;
+  margin-bottom: 0.5em;
+}
+#mainCard h4,
+#mainCard p {
+  margin: 0.4em 0;
+}
+
+/* Card Styling */
+#cardGrid {
+    margin-bottom: 4.5em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 1em;
+}
+.card {
+  margin: 3em 0;
+  background: white;
+  padding: 2em 1.5em;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+.cardSubTitle{
+    color : #6D7883;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    line-height: normal;
+}
+.cardContent{
+    margin: 2.5em 0 0 0   ;
+}
+.card #arrowLink {
+    margin-top: 3.7em;
+}
+#card1 {
+  border-top: #00d5d5 5px solid;
+}
+#card2 {
+  border-top: #e50097 5px solid;
+}
+#card3 {
+  border-top: #5e66f9 5px solid;
+}
+
 footer {
   background-color: #000000;
   padding: 0.8em 0;
 }
 
-@media (max-width: 769px) { 
-    /* general styling*/
+@media (max-width: 769px) {
+  /* general styling*/
 
-    .model {
-        width: 95%;
-        max-width: 1600px;
-        margin: 0 auto;
-      }
+  .model {
+    width: 95%;
+    max-width: 1600px;
+    margin: 0 auto;
+  }
 
-
-      /* landing styling*/
-      #landingSection {
-        padding: 5em 0;
-        background-repeat: no-repeat;
-        background-position-x: 300%;
-        background-size:auto;
-        background-position-y: 94%;
-      }
-      #landingSection div{
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    #landingSection article {
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-    #landingSection button{
-        margin-bottom: 2em;
-    }
-    #landingSection img{
-        margin: 0 6em;
-    }
-    #landingSection h3,#landingSection h1, #landingSection p{padding: 0.15em 0;}
-
-      
+  /* landing styling*/
+  #landingSection {
+    padding: 5em 0;
+    background-repeat: no-repeat;
+    background-position-x: 300%;
+    background-size: auto;
+    background-position-y: 94%;
+  }
+  #landingSection div {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #landingSection article {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  #landingSection button {
+    margin-bottom: 2em;
+  }
+  #landingSection img {
+    margin: 0 6em;
+  }
+  #landingSection h3,
+  #landingSection h1,
+  #landingSection p {
+    padding: 0.15em 0;
+  }
 }
 
 @media (max-width: 425px) {
+  #landingSection {
+    background-image: url("./images/image_header_brand_pattern.svg");
+    background-repeat: no-repeat;
+    background-size: 130%;
+    background-position: -80% 90%;
+  }
+  #landingSection img {
+    max-width: 317px;
+    margin: 0 auto;
+    margin-left: 4em;
+  }
+  #mainCard {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  #mainCard img {
+    margin: 0 6em;
+    grid-row: 0;
+    max-width: 320px;
+    max-height: 171px;
+  }
+  #mainCardContent {
+    grid-row: 99;
+  }
 
-    #landingSection {
-        background-image: url("./images/image_header_brand_pattern.svg");
-        background-repeat: no-repeat;
-        background-size: 130%;
-        background-position: -80% 90%;
+
+
+
+  #cardGrid{ 
+    grid-template-columns: 1fr;
+    max-width: 324px;
+    margin: 0 auto;
     }
-    #landingSection img{
-        max-width: 317px;
-        margin: 0 auto;
-        margin-left: 4em;
-    }
+   .card{
+   }
 }
-
