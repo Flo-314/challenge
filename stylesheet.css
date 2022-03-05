@@ -66,6 +66,7 @@
   font-size: 45px;
   line-height: 55px;
 }
+
 .T2 {
   font-size: 22px;
   line-height: 32px;
@@ -146,26 +147,36 @@ header {
 }
 
 /* MAIN CARD*/
-#mainArticleSection {
-  background-color: red;
-  background: linear-gradient(180deg, white 73%, #e8f8ff 27%);
+#cardsSection {
+    background: linear-gradient(180deg, white 71%, #e8f8ff 29%);
+
+}
+#brandPattern{
+    background-image: url("./images/main-content-area-brand-patterns.svg");
+    background-repeat: no-repeat;
+    background-position-x: -88%;
+    background-position-y: 57%;
+}
+#cardsFlex{
+    gap:6em;
 }
 #mainCard {
   margin: 5em 0;
   display: grid;
-  grid-template-columns: 4fr 5fr;
-  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
-  max-width: 1150px;
+  grid-template-columns: 4fr 6fr;
+  box-shadow: 20px 10px 30px 20px rgb(0 0 0 / 10%);
   width: 100%;
   max-height: 401px;
   height: 100%;
 }
 #mainCardContent {
   padding: 2em;
+  background-color: white;
 }
 #mainCard img {
-  max-width: 686px;
-  max-height: 400px;
+
+  height: 100%;
+  width: 100%;
 }
 #toolButton {
   align-items: center;
@@ -195,6 +206,8 @@ header {
   background: white;
   padding: 2em 1.5em;
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  height: 320px;
+  max-height: 100%;
 }
 .cardSubTitle{
     color : #6D7883;
@@ -223,7 +236,7 @@ footer {
   padding: 0.8em 0;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 1350px) {
   /* general styling*/
 
   .model {
@@ -261,44 +274,121 @@ footer {
   #landingSection p {
     padding: 0.15em 0;
   }
+  #mainCard{
+    box-shadow: 20px 10px 30px 20px rgb(0 0 0 / 10%);
+}
+  #mainCard #arrowLink{
+      margin-bottom: 2em;
+      margin-top: 3em;
+  }
+  #mainCard #arrowLink img{
+      max-width: 8px;
+      max-height: 12px;
+
+  }
+  #cardsSection {
+    background: linear-gradient(180deg, white 40%, #e8f8ff 60%);
+  }
+  #brandPattern {
+    background-image: url("./images/main-content-area-brand-patterns.svg");
+    background-repeat: no-repeat;
+    background-position-x: 255%;
+    background-position-y: 43%;
+  }
+
+  #cardGrid{ 
+    grid-template-columns: 1fr 1fr;
+
+    }
+#mainCard{
+    margin-bottom: 5em;
+}
+    .card{
+        margin:0;
+    }
+    
 }
 
-@media (max-width: 425px) {
+@media (max-width: 750px) {
   #landingSection {
     background-image: url("./images/image_header_brand_pattern.svg");
     background-repeat: no-repeat;
     background-size: 130%;
-    background-position: -80% 90%;
+    background-position: -68% 90%;
   }
   #landingSection img {
     max-width: 317px;
     margin: 0 auto;
-    margin-left: 4em;
+    object-position: 25px;
+  }
+  #landingSection h1{
+      font-size: 35px;
+      line-height: 40px;
+
+  }#cardsFlex{
+      gap: 0;
   }
   #mainCard {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 20px 10px 30px 20px rgb(0 0 0 / 10%);
+    max-width: 324px;
+    max-height: 520px;
+    margin: 0 auto;
+    margin-top: 4em;
+    margin-bottom: 6em;
+
   }
   #mainCard img {
-    margin: 0 6em;
     grid-row: 0;
-    max-width: 320px;
+    max-width: 325px;
     max-height: 171px;
+    width: 100%;
+  }
+  #cardsSection{
+    background: linear-gradient(180deg, white 35%, #e8f8ff 65%);
+  }
+  #pattern{
+      background: none;
   }
   #mainCardContent {
     grid-row: 99;
+    padding: 1.5em;
+  }
+  #mainCard #arrowLink {
+      margin-top: 1.5em;
+      margin-bottom: 1em;
   }
 
-
+#arrowLink img{
+    max-width: 14px;
+    max-height: 14px;
+}
 
 
   #cardGrid{ 
     grid-template-columns: 1fr;
     max-width: 324px;
     margin: 0 auto;
+    margin-bottom: 6em;
+    margin-top: 1em;
+    gap: 1.75em;
     }
+
+ 
    .card{
+       padding-top: 2.5em;
+       padding-bottom: 0em;
+       max-height: 371px;
+       justify-content: center;
+       height: 100%;
    }
+   .card #arrowLink{
+    margin-top: 2.5em;
+    margin-bottom: 2em;
+}
+.cardContent{
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
