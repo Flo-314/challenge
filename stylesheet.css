@@ -17,8 +17,7 @@
   font-family: "DIN Pro" "Courier New", Courier, monospace;
 }
 /* general styling  */
-.logo {
-}
+
 .flex {
   display: flex;
 }
@@ -26,7 +25,6 @@
   display: flex;
   flex-direction: column;
 }
-
 .model {
   width: 80%;
   max-width: 1600px;
@@ -38,7 +36,6 @@
 .secondaryBG {
   background-color: #00a0df;
 }
-
 /* Common Components*/
 
 #arrowLink {
@@ -47,10 +44,6 @@
   justify-items: center;
   gap: 1em;
   height: 100%;
-}
-#mainCard #arrowLink img {
-  max-width: 8px;
-  max-height: 12px;
 }
 #arrowLink a {
   align-self: center;
@@ -64,6 +57,10 @@
   width: 28px;
   border-radius: 4em;
   border: none;
+}
+#arrowLink img {
+  max-width: 8px;
+  max-height: 12px;
 }
 
 /* text classes*/
@@ -153,6 +150,14 @@ header {
   margin-top: 2em;
   justify-self: flex-end;
   cursor: pointer;
+  transition: all 0.1s;
+  border: 2px solid #00a0df;
+}
+#landingSection button:hover {
+  transition: all 0.1s;
+  color: black;
+  border: 2px solid #00a0df;
+  background-color: white;
 }
 
 /* MAIN CARD*/
@@ -199,6 +204,32 @@ header {
   margin: 0.4em 0;
 }
 
+@media (min-width: 1440px) {
+  #landingSection {
+    background-position-x: 105%;
+    background-position-y: 85%;
+  }
+
+  #brandPattern {
+    background-position-x: -33%;
+    background-position-y: 60%;
+  }
+  #mainCard h4 {
+    font-size: 33px;
+    line-height: 43px;
+  }
+  #mainCard p {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  #toolButton p {
+    font-size: 14px;
+  }
+  #arrowLink {
+    font-size: 18px;
+  }
+}
+
 /* Card Styling */
 #cardGrid {
   margin-bottom: 4.5em;
@@ -214,6 +245,12 @@ header {
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
   max-height: 100%;
   height: 85%;
+  transition: all 0.1s;
+}
+.card:hover {
+  transition: all 0.1s;
+  transform: scale(1.02);
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
 }
 .cardSubTitle {
   color: #6d7883;
