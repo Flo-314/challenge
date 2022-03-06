@@ -159,7 +159,6 @@ header {
   margin-bottom: 0.5em;
 }
 
-
 #mainCard {
   margin: 5em 0;
   display: grid;
@@ -180,7 +179,6 @@ header {
   height: 100%;
   width: 100%;
 }
-
 
 #arrowLink {
   margin-top: 5em;
@@ -217,11 +215,13 @@ header {
     background-position-x: -33%;
     background-position-y: 60%;
   }
-  #mainCard h4,.card h4 {
+  #mainCard h4,
+  .card h4 {
     font-size: 30px;
     line-height: 43px;
   }
-  #mainCard p, .card p {
+  #mainCard p,
+  .card p {
     font-size: 18px;
     line-height: 25px;
   }
@@ -231,10 +231,9 @@ header {
   #arrowLink {
     font-size: 18px;
   }
-  .card{
+  .card {
     height: 85%;
   }
-
 }
 
 /* Card Styling */
@@ -251,7 +250,7 @@ header {
   padding: 2em 1.5em;
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
   max-height: 100%;
-transition: all 0.1s;
+  transition: all 0.1s;
 }
 
 .card:hover {
@@ -259,7 +258,6 @@ transition: all 0.1s;
   transform: scale(1.02);
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
 }
-
 
 .cardSubTitle {
   color: #6d7883;
@@ -272,11 +270,9 @@ transition: all 0.1s;
   margin: 2.5em 0 0 0;
 }
 
-
 .card #arrowLink {
   margin-top: 3.7em;
 }
-
 
 #card1 {
   border-top: #00d5d5 5px solid;
@@ -288,17 +284,12 @@ transition: all 0.1s;
   border-top: #5e66f9 5px solid;
 }
 
-
-
 footer {
   background-color: #000000;
   padding: 0.8em 0;
 }
 
-
-
 @media (max-width: 1350px) {
-
   .model {
     width: 95%;
     max-width: 1600px;
@@ -312,7 +303,6 @@ footer {
   }
   #landingSection div {
     flex-direction: column;
-   
   }
   #landingSection article {
     align-items: center;
@@ -341,7 +331,6 @@ footer {
     background: linear-gradient(180deg, white 40%, #e8f8ff 60%);
   }
   #brandPattern {
-
     background-position-x: 255%;
     background-position-y: 43%;
   }
@@ -360,7 +349,6 @@ footer {
 
 @media (max-width: 750px) {
   #landingSection {
-
     background-size: 130%;
     background-position: -68% 90%;
   }
