@@ -180,18 +180,18 @@ header {
   width: 100%;
 }
 
-#arrowLink {
+.arrowLink {
   margin-top: 5em;
   align-items: center;
   justify-items: center;
   gap: 0.75em;
   height: 100%;
 }
-#arrowLink a {
+.arrowLink a {
   align-self: center;
   text-decoration: none;
 }
-#arrowLink button {
+.arrowLink button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -200,7 +200,7 @@ header {
   border-radius: 4em;
   border: none;
 }
-#arrowLink img {
+.arrowLink img {
   max-width: 8px;
   max-height: 12px;
 }
@@ -228,7 +228,7 @@ header {
   #toolButton p {
     font-size: 14px;
   }
-  #arrowLink {
+  .arrowLink {
     font-size: 18px;
   }
   .card {
@@ -270,7 +270,7 @@ header {
   margin: 2.5em 0 0 0;
 }
 
-.card #arrowLink {
+.card .arrowLink {
   margin-top: 3.7em;
 }
 
@@ -322,7 +322,7 @@ footer {
   #mainCard {
     box-shadow: 20px 10px 30px 20px rgb(0 0 0 / 10%);
   }
-  #mainCard #arrowLink {
+  #mainCard .arrowLink {
     margin-bottom: 2em;
     margin-top: 3em;
   }
@@ -391,12 +391,13 @@ footer {
     grid-row: 99;
     padding: 1.5em;
   }
-  #mainCard #arrowLink {
+  #mainCard .arrowLink {
     margin-top: 1.5em;
     margin-bottom: 1em;
   }
+  
 
-  #arrowLink img {
+  .arrowLink img,#mainCard #mainCardContent .arrowLink img {
     max-width: 14px;
     max-height: 14px;
   }
@@ -417,7 +418,7 @@ footer {
     justify-content: center;
     height: 100%;
   }
-  .card #arrowLink {
+  .card .arrowLink {
     margin-top: 2.5em;
     margin-bottom: 2em;
   }
