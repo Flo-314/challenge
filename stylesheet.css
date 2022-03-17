@@ -14,7 +14,7 @@
   box-sizing: border-box;
   padding: 0px;
   margin: 0px;
-  font-family: "DIN Pro" "Courier New", Courier, monospace;
+  font-family: "DIN Pro", "Courier New", "Courier", "monospace";
 }
 /* general styling  */
 
@@ -137,7 +137,7 @@ header {
 /* MAIN CARD*/
 
 #cardsSection {
-  background: linear-gradient(180deg, white 71%, #e8f8ff 29%);
+  background: linear-gradient(180deg, white 46.5%, #e8f8ff 30%);
 }
 #brandPattern {
   background-image: url("./images/main-content-area-brand-patterns.svg");
@@ -257,6 +257,7 @@ header {
   transition: all 0.1s;
   transform: scale(1.02);
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+  
 }
 
 .cardSubTitle {
@@ -328,7 +329,7 @@ footer {
   }
 
   #cardsSection {
-    background: linear-gradient(180deg, white 40%, #e8f8ff 60%);
+    background: linear-gradient(180deg, white 63%, #e8f8ff 30%)
   }
   #brandPattern {
     background-position-x: 255%;
